@@ -1,0 +1,32 @@
+body{
+    display: grid;
+    grid-template-rows: 150px 600px 200px;
+    margin: 0cm;
+    }
+
+    
+nav h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    }
+
+
+.Imagen{
+        background-image: url(../Imagenes/fondo-1.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment:local;
+    }
+
+ footer{
+        background-color: #38b6ff;
+    }
+ 
+ form{
+    display: flex;
+    align-content: center;
+
+    }
+
+ .form-control{
+    margin: 50px;}

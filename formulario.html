@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacion Pequeños Heroes-Donar</title>
+
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
+<!--CSS-->
+<link rel="stylesheet" href="CSS/formulario.css">
+
+<!--sweet alert-->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css" rel="stylesheet">
+
+ <!--Toastify-->
+ <link
+ rel="stylesheet"
+ type="text/css"
+ href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+/>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<nav  class="navbar" style="background-color: #38b6ff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/Logo-2.png" alt="Logo" width="120" height="96" class="d-inline-block align-text-top"> 
+      </a>
+    
+    <div>
+    <h5> </h5>
+  </nav>
+
+ <div class="Imagen">
+    <form class="row g-3" id="formulario">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre</label>
+          <input type="text" class="nombre" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Apellido</label>
+          <input type="text" class="apellido" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label  for="inputAddress" class="form-label">Direccion</label>
+          <input  type="text" class="direccion" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="ciudad" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Campaña</label>
+          <select id="inputState" class="campaña" class="form-select">
+            <option value="">...</option>
+            <option value="Nutricion">Nutricion</option>
+            <option value="Educacion">Educacion</option>
+            <option value="Salud">Salud</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Monto</label>
+          <input type="text" class="monto" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="Toasty">DONAR</button>
+        </div>
+      </form>
+ </div>
+ 
+<footer>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+<!--Sweet Alert-->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.all.min.js"></script>
+
+  <!--Toastify-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+ <!--JS Propio-->
+<script src="JavaScript/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-rows: 150px 600px 200px;
+    margin: 0cm;
+    
+}
+
+
+nav h5{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: x-large;
+}
+
+header{
+    display: grid;
+    grid-template-columns:60% 40%;
+}
+
+.Imagen{
+    background-image: url(../Imagenes/niño-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:local;
+}
+
+.texto{
+    background-color: #161313;
+    
+}
+
+header H6{
+    color: #ffffff;
+    margin: 30px;
+}
+
+footer{
+    background-color: #38b6ff;
+}
