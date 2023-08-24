@@ -34,23 +34,33 @@ document.getElementById("Toasty").addEventListener("click", function (event) {
   let mensaje = "";
   let link = "";
 
-  switch (opcionSeleccionada) {
-    case "Nutricion":
-      mensaje = "Haz click para conocer la campaña de Nutricion";
-      link = "pages/Nutricion.html"
-      break;
-    case "Educacion":
-      mensaje = "Haz click para conocer la campaña de Educacion";
-      link = "pages/Educacion.html"
-      break;
-    case "Salud":
-      mensaje = "Haz click para conocer la campaña de Salud";
-      link = "pages/Salud.html"
-      break;
-    default:
-      mensaje = "Selecciona una opción válida";
-      break;
+  const campañas = [
+    {
+      nombre: "Nutricion",
+      mensaje: "Haz click para conocer la campaña de Nutricion",
+      enlace: "pages/Nutricion.html"
+    },
+    {
+      nombre: "Educacion",
+      mensaje: "Haz click para conocer la campaña de Educacion",
+      enlace: "pages/Educacion.html"
+    },
+    {
+      nombre: "Salud",
+      mensaje: "Haz click para conocer la campaña de Salud",
+      enlace: "pages/Salud.html"
+    }
+  ];
+  
+  const campañaSeleccionada = campañas.find(campaña => campaña.nombre === opcionSeleccionada);
+  
+  if (campañaSeleccionada) {
+    mensaje = campañaSeleccionada.mensaje;
+    link = campañaSeleccionada.enlace;
+  } else {
+    mensaje = "Selecciona una opción válida";
   }
+  
 
   Toastify({
     text: mensaje,
@@ -59,3 +69,21 @@ document.getElementById("Toasty").addEventListener("click", function (event) {
   }).showToast();
 });
 
+function cargarCampañas() {
+  return fetch('campañas.json') 
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al cargar las campañas');
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
+
+
+cargarCampañas()
+  .then(campañas => {
+    console.log(campañas);
+  });

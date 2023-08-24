@@ -1,0 +1,18 @@
+[
+    {
+      "nombre": "Nutricion",
+      "mensaje": "Haz click para conocer la campaña de Nutricion",
+      "enlace": "pages/Nutricion.html"
+    },
+    {
+      "nombre": "Educacion",
+      "mensaje": "Haz click para conocer la campaña de Educacion",
+      "enlace": "pages/Educacion.html"
+    },
+    {
+      "nombre": "Salud",
+      "mensaje": "Haz click para conocer la campaña de Salud",
+      "enlace": "pages/Salud.html"
+    }
+  ]
+  
